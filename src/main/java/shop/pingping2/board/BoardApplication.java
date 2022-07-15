@@ -50,4 +50,4 @@ public class BoardApplication {
 //			this.email = email;
 //		}
 //	}
-}
+//}

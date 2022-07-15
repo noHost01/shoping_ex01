@@ -4,6 +4,10 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import shop.pingping2.board.dto.BoardDto;
+import shop.pingping2.board.service.BoardService;
+
+import java.util.List;
 
 @Controller
 @AllArgsConstructor

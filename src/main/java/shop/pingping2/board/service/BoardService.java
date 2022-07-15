@@ -23,7 +23,7 @@ public class BoardService {
     private static final int BLOCK_PAGE_NUM_COUNT = 5;
     private static final int PAGE_POST_COUNT = 4;
 
-    private BoardDto converEntityToDto(Board board) {
+    private BoardDto convertEntityToDto(Board board) {
         return BoardDto.builder()
                 .id(board.getId())
                 .title(board.getTitle())
@@ -42,9 +42,9 @@ public class BoardService {
         List<BoardDto> boardDtoList = new ArrayList<>();
 
         for(Board board : boardEntities) {
-            boardDtoList.add(this.converEntityToDto(board));
+            boardDtoList.add(this.convertEntityToDto(board));
         }
-        return boardDtoList
+        return boardDtoList;
     }
 
     @Transactional
@@ -82,7 +82,7 @@ public class BoardService {
         if(boardEntities.isEmpty()) return boardDtoList;
 
         for(Board board : boardEntities) {
-            boardDtoList.add(this.converEntityToDto(board));
+            boardDtoList.add(this.convertEntityToDto(board));
         }
         return boardDtoList;
     }
