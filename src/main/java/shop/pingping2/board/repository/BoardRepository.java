@@ -2,6 +2,7 @@ package shop.pingping2.board.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import shop.pingping2.board.domain.Board;
+import shop.pingping2.board.domain.User;
 
 import java.util.List;
 

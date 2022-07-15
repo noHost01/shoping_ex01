@@ -72,7 +72,7 @@ public class BoardService {
     @Transactional
     public void deletePost(Long id) {
         boardRepository.deleteById(id);
- 1   }
+    }
 
     @Transactional
     public List<BoardDto> searchPosts(String keyword) {
