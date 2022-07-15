@@ -2,6 +2,7 @@ package shop.pingping2.board.dto;
 
 import lombok.Builder;
 import lombok.Getter;
+import shop.pingping2.board.domain.Role;
 import shop.pingping2.board.domain.User;
 
 import java.util.Map;
